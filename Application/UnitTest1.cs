@@ -31,6 +31,7 @@ namespace Application
                 //Thread.Sleep(5000);
                //clicking on alert
                 IWebElement alertbox = driver.FindElement(By.CssSelector("#main-content > article.mh-loop-item.clearfix.post-119.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-special-elements > div.mh-loop-content.clearfix > header > h3 > a"));
+                alertbox.click();
                 Thread.Sleep(5000);
                 
                 IAlert alert = driver.SwitchTo().Alert();
